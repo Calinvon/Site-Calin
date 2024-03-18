@@ -12,7 +12,20 @@
     font-style: normal;
     font-size: 80px;
     color:#4872FA;
+    animation: slide-in 2s ease-out forwards;
+    opacity: 0;
   }
+
+  @keyframes slide-in {
+    0% {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
 
   .subtitlu{
   font-family: "Pacifico", cursive;
@@ -198,8 +211,13 @@ background-color: #4872FA;
   text-align: center;
 }
 
+.tiktokColor{
+  color: white;
+}
+
 
 @media(min-width:319px;) and (max-width:480px) {
     p{font-size: 40px;}
 
 }
+
